@@ -26,6 +26,10 @@ const Csr: NextPage = () => {
 
         getTasks();
         getNotice();
+
+        console.log(tasks ?? "tasksが取得できていません");
+        console.log(notices ?? "noticesが取得できていません");
+
     }, []);
 
     return (
