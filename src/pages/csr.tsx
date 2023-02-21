@@ -32,7 +32,7 @@ const Csr: NextPage = () => {
         <Layout title="CSR">
             <p className="mb-3 text-blue-500">SSG + CSF</p>
             <ul className="mb-3">
-                {tasks.map((task) => {
+                {tasks?.map((task) => {
                     return (
                         <li key={task.id}>
                             <p className="text-lg font-extrabold">{task.title}</p>
@@ -42,7 +42,7 @@ const Csr: NextPage = () => {
             </ul>
 
             <ul className="mb-3">
-                {notices.map((notice) => {
+                {notices?.map((notice) => {
                     return (
                         <li key={notice.id}>
                             <p className="text-lg font-extrabold">{notice.content}</p>
