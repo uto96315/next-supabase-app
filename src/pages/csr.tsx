@@ -30,7 +30,7 @@ const Csr: NextPage = () => {
         console.log(tasks ?? "tasksが取得できていません");
         console.log(notices ?? "noticesが取得できていません");
 
-    }, []);
+    }, [tasks, notices]);
 
     return (
         <Layout title="CSR">
